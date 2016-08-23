@@ -30,11 +30,12 @@ public class GradeMe {
 		List <Name> testNames = Arrays.asList(nameArray);
 		Collections.sort(testNames, Collections.reverseOrder());
 		
-		Iterator <Name> itr = names.iterator();
+		Iterator <Name> itr = testNames.iterator();
 		int count = 0;
 		while (itr.hasNext())
 		{
 			assertEquals(sortedArray[count].toString(),itr.next().toString());
+			count++;
 		}
 	}
 
